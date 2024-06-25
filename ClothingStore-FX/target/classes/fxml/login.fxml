@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="605.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/th.jpg" />
+         </image>
+         <effect>
+            <BoxBlur iterations="3" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="402.0" fitWidth="313.0" nodeOrientation="INHERIT" pickOnBounds="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="292.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/a3920ae03c6922d60c76b8b8a8b2d143.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="336.0" layoutY="20.0" prefHeight="35.0" prefWidth="241.0" text="Sign In Your Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="55.0" prefHeight="17.0" prefWidth="122.0" text="Admin Portal" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="admin_username" focusColor="#183690" layoutX="359.0" layoutY="107.0" prefHeight="25.0" prefWidth="176.0" promptText="Username" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="admin_password" layoutX="359.0" layoutY="152.0" prefHeight="25.0" prefWidth="176.0" promptText="Password" unFocusColor="#f5f5f5" />
+      <JFXButton fx:id="admin_btnlogin" layoutX="361.0" layoutY="201.0" prefHeight="35.0" prefWidth="176.0" text="Login" textFill="#fffbfb" />
+      <Label layoutX="399.0" layoutY="292.0" prefHeight="17.0" prefWidth="97.0" text="Other Accounts" textFill="#fffefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="admin_select" layoutX="369.0" layoutY="338.0" prefHeight="25.0" prefWidth="176.0" promptText="Select" unFocusColor="WHITE" />
+      <Label layoutX="464.0" layoutY="242.0" prefHeight="17.0" prefWidth="113.0" text="Forgot Password?" textFill="WHITE" />
+   </children>
+</AnchorPane>
